@@ -13,9 +13,13 @@
       rel="stylesheet"
     />
   </head>
-  <body class="text-[#302e4d] scroll-smooth">
-    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]"><img src="images/header-bg-color.png" class="w-full" alt=""></div>
-    <nav class="w-full fixed mt-7 px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 text-2xl">
+  <body class="text-[#302e4d] scroll-smooth overflow-x-hidden">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
+      <img src="images/header-bg-color.png" class="w-full" alt="" />
+    </div>
+    <nav
+      class="w-full fixed mt-7 px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 text-2xl"
+    >
       <h3
         class="mt-[-5px] cursor-pointer font-extrabold text-5xl"
         style="font-family: 'Clicker Script', cursive"
@@ -32,13 +36,33 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="flex items-center gap-4">
-        <button><img src="images/moon_icon.png" class="w-6" alt=""></button>
-        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+        <button><img src="images/moon_icon.png" class="w-6" alt="" /></button>
+        <a
+          href="#contact"
+          class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
           >Hire Me <img src="images/arrow-icon.png" alt="arrow" class="w-3"
         /></a>
-        <button class="block md:hidden ml-3"><img src="images/menu-black.png" class="w-6" alt=""></button>
+        <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="images/menu-black.png" class="w-6" alt="" />
+        </button>
       </div>
+
+      <!--------------------------- start mobile menu --------------------------------- -->
+      <ul
+        id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 button-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4"
+      >
+
+         <div class="absolute right-6 top-6" onclick="closeMenu()"><img src="images/close-black.png" alt="" class="w-5 cursor-pointer"></div>
+
     
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+      </ul>
+      <!--------------------------- end mobile menu --------------------------------- -->
     </nav>
+    <script src="script.js"></script>
   </body>
 </html>

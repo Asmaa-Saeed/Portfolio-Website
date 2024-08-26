@@ -13,12 +13,12 @@
       rel="stylesheet"
     />
   </head>
-  <body class="text-[#302e4d] scroll-smooth overflow-x-hidden">
+  <body class="text-[#302e4d] scroll-smooth transitionoverflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
       <img src="images/header-bg-color.png" class="w-full" alt="" />
     </div>
     <nav
-      class="w-full fixed mt-7 px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 text-2xl"
+      class="w-full  fixed mt-1 px-5 lg:px-8 xl:px-[5%] flex items-center justify-between z-50 text-xl"
     >
       <h3
         class="mt-[-5px] cursor-pointer font-extrabold text-5xl sm:ml-8"
@@ -27,13 +27,14 @@
         Mohamed<span class="text-7xl text-fuchsia-700">.</span>
       </h3>
       <ul
-        class="items-center hidden gap-6 px-12 py-3 text-center bg-white bg-opacity-50 rounded-full shadow-sm md:flex lg:gap-8 w-fit"
+        class="items-center hidden gap-6 px-12 py-3 text-center bg-white rounded-full shadow-sm bg-opacity-80 md:flex lg:gap-8 w-fit"
       >
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" class="transition hover:text-green-600">Home</a></li>
+        <li><a href="#about" class="transition hover:text-green-600">About</a></li>
+        <li><a href="#skills" class="transition hover:text-green-600">Skills</a></li>
+        <li><a href="#services" class="transition hover:text-green-600">Services</a></li>
+        <li><a href="#portfolio" class="transition hover:text-green-600">Portfolio</a></li>
+        <li><a href="#contact" class="transition hover:text-green-600">Contact</a></li>
       </ul>
       <div class="flex items-center gap-4">
         <button><img src="images/moon_icon.png" class="w-6" alt="" /></button>
@@ -58,6 +59,7 @@
 
         <li><a href="#home" onclick="closeMenu()">Home</a></li>
         <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
         <li><a href="#services" onclick="closeMenu()">Services</a></li>
         <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
@@ -66,10 +68,10 @@
     <!--------------------------- end mobile menu --------------------------------- -->
 
     <!-- -------------------start header--------------- -->
-    <div
+    <div id="home"
       class="flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl mx-auto text-center"
     >
-      <img src="images/profile-img.jpg" alt="" class="w-32 rounded-full" />
+      <img src="images/profile-img.jpg" alt="" class="w-32 mt-10 rounded-full" />
       <h3 class="flex items-end gap-2 mt-2 mb-5 text-xl md:text-2xl">
         Hi! I am Mohamed Abdelmaboud
         <img src="images/hand-icon.png" alt="" class="w-6" />
@@ -95,7 +97,20 @@
     
     </div>
     <!-- -------------------end header--------------- -->
-
+    <!-- -------- ---- start about------------ -->
+    <div id="about" class="w-full p-10 px-[12%] py-10 bg-zinc-50" style="clip-path: polygon(0 4%, 100% 21%, 100% 87%, 0 100%)">
+       <h4  class="mt-20 text-lg text-center mb-22">Introduction</h4>
+       <h2 class="text-5xl text-center">About Me</h2>
+      <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row"> 
+        <div class="relative mx-auto max-w-max">
+          <img src="./images/profile-img.jpg" alt="" class="w-64 mb-10 sm:w-80 rounded-3xl max-w-none">
+        </div>
+        <div class="flex-1">
+          <p>I am an experienced Flutter Developer with over a professional expertise in the field. Throughout my career, I will contribute in the privilege of collaborating with prestigious organizations, contributing to their success and growth.</p>
+        </div>
+       </div>
+    </div>
+    <!-- ---------end about ------------>
     <script src="script.js"></script>
   </body>
 </html>

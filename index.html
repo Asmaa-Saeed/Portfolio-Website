@@ -21,13 +21,13 @@
       class="w-full fixed mt-7 px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 text-2xl"
     >
       <h3
-        class="mt-[-5px] cursor-pointer font-extrabold text-5xl"
+        class="mt-[-5px] cursor-pointer font-extrabold text-5xl sm:ml-8"
         style="font-family: 'Clicker Script', cursive"
       >
         Mohamed<span class="text-7xl text-fuchsia-700">.</span>
       </h3>
       <ul
-        class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 w-fit bg-opacity-50 bg-white shadow-sm text-center"
+        class="items-center hidden gap-6 px-12 py-3 text-center bg-white bg-opacity-50 rounded-full shadow-sm md:flex lg:gap-8 w-fit"
       >
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -42,27 +42,60 @@
           class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
           >Hire Me <img src="images/arrow-icon.png" alt="arrow" class="w-3"
         /></a>
-        <button class="block md:hidden ml-3" onclick="openMenu()">
+        <button class="block ml-3 md:hidden" onclick="openMenu()">
           <img src="images/menu-black.png" class="w-6" alt="" />
         </button>
       </div>
 
       <!--------------------------- start mobile menu --------------------------------- -->
       <ul
-        id="sideMenu" class="flex md:hidden flex-col py-20 px-10 fixed -right-64 top-0 button-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 gap-4"
+        id="sideMenu"
+        class="fixed top-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 md:hidden -right-64 button-0 bg-rose-50"
       >
+        <div class="absolute right-6 top-6" onclick="closeMenu()">
+          <img src="images/close-black.png" alt="" class="w-5 cursor-pointer" />
+        </div>
 
-         <div class="absolute right-6 top-6" onclick="closeMenu()"><img src="images/close-black.png" alt="" class="w-5 cursor-pointer"></div>
-
-    
         <li><a href="#home" onclick="closeMenu()">Home</a></li>
         <li><a href="#about" onclick="closeMenu()">About</a></li>
         <li><a href="#services" onclick="closeMenu()">Services</a></li>
         <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
-      <!--------------------------- end mobile menu --------------------------------- -->
     </nav>
+    <!--------------------------- end mobile menu --------------------------------- -->
+
+    <!-- -------------------start header--------------- -->
+    <div
+      class="flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl mx-auto text-center"
+    >
+      <img src="images/profile-img.jpg" alt="" class="w-32 rounded-full" />
+      <h3 class="flex items-end gap-2 mt-2 mb-5 text-xl md:text-2xl">
+        Hi! I am Mohamed Abdelmaboud
+        <img src="images/hand-icon.png" alt="" class="w-6" />
+      </h3>
+      <h1 id="typing-text" class="font-['Arial'] text-4xl profession"></h1>
+      <p class="max-w-2xl mx-auto mt-5 text-xl">
+        With a custom development and creative design, I create apps that inspire my clients, and increase their sales by reaching the target audience efficiently.
+      </p>
+
+      <div class= "flex flex-col items-center gap-4 mt-10 sm:flex-row ">
+        <a href="#contact" 
+           class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">
+            Hire Me 
+            <img src="images/right-arrow-white.png" alt="" class="w-4">
+        </a>
+        
+        <a href="./mohamed abdelmaboud.pdf"  download
+           class=" transition ease-in-out flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full hover:bg-gradient-to-r from-[#b820e6] to-[#da7d20]">
+            My CV
+            <img src="images/download-icon.png" alt="" class="w-4 text-white">
+        </a>
+    </div>
+    
+    </div>
+    <!-- -------------------end header--------------- -->
+
     <script src="script.js"></script>
   </body>
 </html>

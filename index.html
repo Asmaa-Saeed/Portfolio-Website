@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-[#302e4d] scroll-smooth">
+    <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]"><img src="images/header-bg-color.png" class="w-full" alt=""></div>
+    <nav class="w-full fixed mt-7 px-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 text-2xl">
+      <h3
+        class="mt-[-5px] cursor-pointer font-extrabold text-5xl"
+        style="font-family: 'Clicker Script', cursive"
+      >
+        Mohamed<span class="text-7xl text-fuchsia-700">.</span>
+      </h3>
+      <ul
+        class="md:flex hidden items-center gap-6 lg:gap-8 rounded-full px-12 py-3 w-fit bg-opacity-50 bg-white shadow-sm text-center"
+      >
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="flex items-center gap-4">
+        <button><img src="images/moon_icon.png" class="w-6" alt=""></button>
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4"
+          >Hire Me <img src="images/arrow-icon.png" alt="arrow" class="w-3"
+        /></a>
+        <button class="block md:hidden ml-3"><img src="images/menu-black.png" class="w-6" alt=""></button>
+      </div>
+    
+    </nav>
+  </body>
+</html>

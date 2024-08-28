@@ -12,8 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Qwitcher+Grypen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css">
-  
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="all.min.css" />
   </head>
   <body class="text-[#302e4d] overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
@@ -39,11 +39,6 @@
         </li>
         <li>
           <a href="#skills" class="transition hover:text-green-600">Skills</a>
-        </li>
-        <li>
-          <a href="#services" class="transition hover:text-green-600"
-            >Services</a
-          >
         </li>
         <li>
           <a href="#portfolio" class="transition hover:text-green-600"
@@ -78,7 +73,6 @@
         <li><a href="#home" onclick="closeMenu()">Home</a></li>
         <li><a href="#about" onclick="closeMenu()">About</a></li>
         <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
-        <li><a href="#services" onclick="closeMenu()">Services</a></li>
         <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
         <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
       </ul>
@@ -178,7 +172,7 @@
           <h4 class="my-6 font-bold text-gray-700">Tools I Use:</h4>
           <ul class="flex items-center gap-3 sm:gap-5">
             <li
-              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg] "
+              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]"
             >
               <img src="images/vscode.png" alt="" />
             </li>
@@ -201,9 +195,9 @@
               class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]"
             >
               <img src="images/git.png" alt="" />
-          </li>
+            </li>
             <li
-              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-  hover:rotate-[360deg]"
+              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity- hover:rotate-[360deg]"
             >
               <img src="images/Postman.webp" alt="" />
             </li>
@@ -216,8 +210,7 @@
         </div>
       </div>
     </div>
-  
-    
+
     <!-- ---------end about ------------>
 
     <!-- ---------start skills ------------>
@@ -229,7 +222,6 @@
       <div
         class="container flex flex-col items-center mx-auto gap-28 md:flex-row md:space-x-5"
       >
-      
         <!-- Skills Section -->
         <div class="w-full space-y-6 skills md:w-1/2">
           <div class="skill">
@@ -293,7 +285,7 @@
             </div>
           </div>
         </div>
-      
+
         <!-- Image (GIF) -->
         <div class="flex justify-center max-w-2xl md:w-1/3">
           <img
@@ -302,46 +294,51 @@
             class="w-full max-w-xs rounded-lg md:max-w-sm md:h-auto"
           />
         </div>
-        </div>
+      </div>
     </div>
     <!-- ---------end skills ------------>
-    
-    <!-- ---------start services section ------------>
-        <div id="services" class="w-full px-[12%] py-10 scroll-mt-20">
-          <h4 class="mt-20 text-lg text-center mb-22">What I Offer</h4>
-          <h2 class="text-5xl text-center">My Services</h2>
-          <p class="max-w-2xl mx-auto mt-5 mb-12 text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quibusdam ad iusto minima eligendi, voluptatum sapiente cupiditate animi quidem dolor!</p>
 
-          <div class="grid grid-cols-4 gap-6 my-10">
-            <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-              <img src="./images/web-icon.png" alt="" class="w-10">
-              <h3 class="my-4 text-lg text-gray-700">Web Design</h3>
-              <p class="text-sm leading-5 text-gray-600">Web development is the process of building, programming...</p>
-              <a href="" class="flex items-center gap-2 mt-5 text-sm">Read More <img src="images/right-arrow.png" alt=""></a>
-            </div>
-            <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-              <img src="./images/mobile-icon.png" alt="" class="w-10">
-              <h3 class="my-4 text-lg text-gray-700">Mobile App</h3>
-              <p class="text-sm leading-5 text-gray-600">Web development is the process of building, programming...</p>
-              <a href="" class="flex items-center gap-2 mt-5 text-sm">Read More <img src="images/right-arrow.png" alt=""></a>
-            </div>
-            <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-              <img src="./images/ui-icon.png" alt="" class="w-10">
-              <h3 class="my-4 text-lg text-gray-700">UI/ UX design</h3>
-              <p class="text-sm leading-5 text-gray-600">Web development is the process of building, programming...</p>
-              <a href="" class="flex items-center gap-2 mt-5 text-sm">Read More <img src="images/right-arrow.png" alt=""></a>
-            </div>
-            <div class="px-8 py-12 border border-gray-400 rounded-lg hover:shadow-[4px_4px_0_#000] hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500">
-              <img src="./images/graphics-icon.png" alt="" class="w-10">
-              <h3 class="my-4 text-lg text-gray-700">Graphic Design</h3>
-              <p class="text-sm leading-5 text-gray-600">Web development is the process of building, programming...</p>
-              <a href="" class="flex items-center gap-2 mt-5 text-sm">Read More <img src="images/right-arrow.png" alt=""></a>
-            </div>
-          </div>
+    <!-- ---------start contact section ------------>
+    <div
+      id="contact"
+      class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center"
+    >
+      <h4 class="mt-20 text-lg text-center mb-22">Connect With Me</h4>
+      <h2 class="text-5xl text-center">Get In Touch</h2>
+      <p class="text-center">
+        I would love to hear from you! if you have any questions, comments or
+        feedback, please use the form below.
+      </p>
+    
+      <form action="" class="max-w-2xl mx-auto">
+        <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="transition flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+          />
+
+          <input
+            type="text"
+            placeholder="Your Email"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+          />
         </div>
-    <!-- ---------end services section ------------>
-    
-    
+        <textarea
+          rows="6"
+          placeholder="Your Message"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+        ></textarea>
+        <button
+          class="flex items-center justify-between gap-2 px-8 py-3 mx-auto text-white duration-500 rounded-full bg-black/80 w-max hover:bg-black"
+        >
+          Send Message
+        </button>
+        <img src="images/right-arrow-white.png" class="w-4" alt="" />
+      </form>
+    </div>
+    <!-- ---------end contact section ------------>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -12,8 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Qwitcher+Grypen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/styles.css" />
   </head>
   <body class="text-[#302e4d] overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
@@ -309,35 +310,69 @@
         I would love to hear from you! if you have any questions, comments or
         feedback, please use the form below.
       </p>
-    
-      <form action="" class="max-w-2xl mx-auto">
+      <div>
+        <div class="grid grid-cols-1 gap-6 p-6 mt-10 md:grid-cols-3">
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg box">
+            <i class="mb-2 text-3xl text-green-600 fa-solid fa-phone"></i>
+            <span class="mb-1 text-xl font-semibold text-gray-800">Phone</span>
+            <p class="text-gray-600">+201029648334</p>
+          </div>
+          <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md box">
+            <i class="mb-2 text-3xl text-blue-600 fa-solid fa-envelope"></i>
+            <span class="mb-1 text-xl font-semibold text-gray-800">Email</span>
+            <p class="text-gray-600">mohamedabdlmabod03@gmail.com</p>
+          </div>
+          <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-md box">
+            <i class="mb-2 text-3xl text-red-600 fa-solid fa-location-dot"></i>
+            <span class="mb-1 text-xl font-semibold text-gray-800">Address</span>
+            <p class="text-gray-600">Egypt, Zagazig, Al Sharqia</p>
+          </div>
+        </div>
+        
+
+        <p class="mt-5 ml-8 -mb-5 text-xl font-bold ">Send Me An Email:</p>
+        
+      <form action="" class="max-w-4xl mx-auto">
         <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Your Name"
-            class="transition flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            class="transition flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white"
           />
 
           <input
             type="text"
             placeholder="Your Email"
-            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white"
           />
         </div>
         <textarea
           rows="6"
           placeholder="Your Message"
-          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white mb-6"
         ></textarea>
         <button
           class="flex items-center justify-between gap-2 px-8 py-3 mx-auto text-white duration-500 rounded-full bg-black/80 w-max hover:bg-black"
         >
-          Send Message
+          Submit 
         </button>
         <img src="images/right-arrow-white.png" class="w-4" alt="" />
       </form>
+      <div class="flex justify-center mt-10">
+        <div class="w-full h-64 overflow-hidden rounded-lg shadow-lg md:w-2/3">
+          <iframe 
+            class="w-full h-full border-0"
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=Egypt,Zagazig,Al+Sharqia"
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
     </div>
+    </div>
+    
     <!-- ---------end contact section ------------>
+
+
 
     <script src="script.js"></script>
   </body>

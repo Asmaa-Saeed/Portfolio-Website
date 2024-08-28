@@ -1,0 +1,4 @@
+.the-progress span {
+  width: 0;
+  transition: width 2s ease-in-out;
+}

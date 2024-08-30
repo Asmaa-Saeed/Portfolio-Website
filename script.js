@@ -11,7 +11,7 @@ function closeMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("typing-text");
-  const texts = ["Flutter Developer Based In Egypt", "Hard Working developer"];
+  const texts = [" ","Flutter Developer Based In Egypt"];
   let textIndex = 0;
   let charIndex = 0;
 
@@ -57,4 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
   progressBars.forEach(function (bar) {
     observer.observe(bar);
   });
+});
+
+
+// scroll navbar
+const navBar = document.querySelector("nav");
+const navLinks = document.querySelector("nav ul");
+
+
+
+window.addEventListener("scroll", () => {
+  if(scrollY > 50) {
+    navBar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navLinks.classList.remove('bg-white', 'bg-opacity-50', 'shadow-sm' );
+  }else {
+    navBar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navLinks.classList.add('bg-white', 'bg-opacity-50', 'shadow-sm' );
+  }
 });

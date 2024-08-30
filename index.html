@@ -15,39 +15,45 @@
     <link rel="stylesheet" href="style/all.min.css" />
     <link rel="stylesheet" href="style/normalize.css" />
     <link rel="stylesheet" href="style/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="text-[#302e4d] overflow-x-hidden">
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%]">
       <img src="images/header-bg-color.png" class="w-full" alt="" />
     </div>
     <nav
-      class="w-full fixed px-5 lg:px-8 xl:px-[5%] bg-white flex items-center justify-between z-50 text-xl"
+      class="w-full fixed px-5 lg:px-8 xl:px-[5%] flex items-center justify-between z-50 text-xl"
     >
       <h3
         class="mt-[-5px] cursor-pointer font-extrabold text-5xl sm:ml-8"
         style="font-family: 'Clicker Script', cursive"
       >
-        Mohamed<span class="text-[#2196F3] text-7xl">.</span>
+        Mohamed<span class="text-teal-600 text-7xl">.</span>
       </h3>
       <ul
         class="items-center hidden gap-6 px-12 py-3 text-center bg-white rounded-full shadow-sm bg-opacity-80 md:flex lg:gap-8 w-fit"
       >
         <li>
-          <a href="#home" class="transition hover:text-[#2196F3]">Home</a>
+          <a href="#home" class="transition hover:text-teal-600">Home</a>
         </li>
         <li>
-          <a href="#about" class="transition hover:text-[#2196F3]">About</a>
+          <a href="#about" class="transition hover:text-teal-600">About</a>
         </li>
         <li>
-          <a href="#skills" class="transition hover:text-[#2196F3]">Skills</a>
+          <a href="#skills" class="transition hover:text-teal-600">Skills</a>
         </li>
         <li>
-          <a href="#portfolio" class="transition hover:text-[#2196F3]"
+          <a href="#portfolio" class="transition hover:text-teal-600"
             >Portfolio</a
           >
         </li>
         <li>
-          <a href="#contact" class="transition hover:text-[#2196F3]">Contact</a>
+          <a href="#contact" class="transition hover:text-teal-600">Contact</a>
         </li>
       </ul>
       <div class="flex items-center gap-4">
@@ -98,57 +104,93 @@
     <!-- -------------------start header--------------- -->
     <div
       id="home"
-      class="flex flex-col items-center justify-center w-11/12 h-screen max-w-3xl mx-auto text-center"
+      class="flex flex-col items-center justify-center w-11/12 h-screen max-w-4xl mx-auto text-center"
     >
-      <img
-        src="images/profile-img.jpg"
-        alt=""
-        class="w-32 mt-20 rounded-full"
-      />
-      <h3 class="flex items-end gap-2 mt-2 mb-5 text-xl md:text-2xl">
-        Hi! I am Mohamed Abdelmaboud
-        <img src="images/hand-icon.png" alt="" class="w-6" />
-      </h3>
-      <h1 id="typing-text" class="font-['Arial'] text-4xl profession"></h1>
-      <p class="max-w-2xl mx-auto mt-5 text-xl">
-        With a custom development and creative design, I create apps that
-        inspire my clients, and increase their sales by reaching the target
-        audience efficiently.
-      </p>
+      <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
+        <div>
+          <h3
+            class="flex items-center justify-center gap-2 mt-2 mb-5 text-xl md:text-xl"
+          >
+            Hi! I am Mohamed Abdelmaboud
+            <img src="images/hand-icon.png" alt="" class="w-6" />
+          </h3>
+          <h1
+            id="typing-text"
+            class="font-['Cursive'] text-4xl profession text-teal-600"
+          ></h1>
+          <p class="max-w-2xl mx-auto mt-5 text-xl">
+            With a custom development and creative design, I create apps that
+            inspire my clients, and increase their sales by reaching the target
+            audience efficiently.
+          </p>
 
-      <div class="flex flex-col items-center gap-4 mt-10 sm:flex-row">
-        <a
-          href="#contact"
-          class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
-        >
-          Hire Me
-          <img src="images/right-arrow-white.png" alt="" class="w-4" />
-        </a>
+          <div
+            class="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row"
+          >
+            <a
+              href="#contact"
+              class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2"
+            >
+              Hire Me
+              <img src="images/right-arrow-white.png" alt="" class="w-4" />
+            </a>
 
-        <a
-          href="./mohamed abdelmaboud.pdf"
-          download
-          class="transition ease-in-out flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full hover:bg-gradient-to-r from-[#b820e6] to-[#da7d20]"
-        >
-          My CV
-          <img src="images/download-icon.png" alt="" class="w-4 text-white" />
-        </a>
+            <a
+              href="./mohamed abdelmaboud.pdf"
+              download
+              class="transition ease-in-out flex items-center gap-2 px-10 py-3 bg-white border border-gray-500 rounded-full hover:bg-gradient-to-r from-[#b820e6] to-[#da7d20]"
+            >
+              My CV
+              <img
+                src="images/download-icon.png"
+                alt=""
+                class="w-4 text-white"
+              />
+            </a>
+          </div>
+          <div class="social">
+            <ul
+              class="flex items-center justify-center gap-4 mt-10 text-center"
+            >
+              <a
+                href="https://www.linkedin.com/in/mohamed-abdelmaboud-a95632296/"
+                ><li
+                  class="flex items-center justify-center w-12 duration-500 border rounded-lg cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee]"
+                >
+                  <i
+                    class="text-5xl text-teal-600 duration-600 hover:text-teal-700 fa-brands fa-linkedin"
+                  ></i></li
+              ></a>
+              <a href="https://github.com/MohamedAbdelmaboud"
+                ><li
+                  class="flex items-center justify-center w-12 duration-500 border rounded-lg cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee]"
+                >
+                  <i
+                    class="text-5xl text-teal-600 duration-500 hover:text-teal-700 fa-brands fa-github"
+                  ></i></li
+              ></a>
+            </ul>
+          </div>
+        </div>
+        <div class="relative mx-auto max-w-max">
+          <img
+            src="./images/profile-img.jpg"
+            alt=""
+            class="mt-10 mb-10 w-72 h-96 sm:w-80 rounded-3xl max-w-none"
+          />
+        </div>
       </div>
     </div>
     <!-- -------------------end header--------------- -->
 
     <!-- -------- ---- start about------------ -->
-    <div
-      id="about"
-      class="w-full p-10 px-[12%] py-10 bg-zinc-50"
-      style="clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%)"
-    >
+    <div id="about" class="w-full p-10 px-[12%] py-10 bg-zinc-50">
       <h4 class="mt-20 text-lg text-center mb-22">Introduction</h4>
       <h2 class="text-5xl text-center">About Me</h2>
       <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
         <div class="relative mx-auto max-w-max">
           <img
-            src="./images/mo3.gif"
+            src="./images/about.gif"
             alt=""
             class="mb-10 w-72 h-96 sm:w-80 rounded-3xl max-w-none"
           />
@@ -164,7 +206,7 @@
             <li
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col"
             >
-              <i class="w-10 mt-3 text-2xl text-[#2196F3] fa-solid fa-code"></i>
+              <i class="w-10 mt-3 text-2xl text-teal-600 fa-solid fa-code"></i>
               <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
               <p class="text-sm text-gray-600">Flutter, Dart, C++, Python</p>
             </li>
@@ -172,7 +214,7 @@
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col"
             >
               <i
-                class="w-10 mt-3 text-2xl text-[#2196F3] fa-solid fa-graduation-cap"
+                class="w-10 mt-3 text-2xl text-teal-600 fa-solid fa-graduation-cap"
               ></i>
               <h3 class="my-4 font-semibold text-gray-700">Education</h3>
               <p class="text-sm text-gray-600">
@@ -183,7 +225,7 @@
               class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col"
             >
               <i
-                class="w-10 mt-3 text-2xl text-[#2196F3] fa-solid fa-briefcase"
+                class="w-10 mt-3 text-2xl text-teal-600 fa-solid fa-briefcase"
               ></i>
               <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
               <p class="text-sm text-gray-600">20+ Projects</p>
@@ -235,9 +277,6 @@
 
     <!-- ---------start skills ------------>
     <div id="skills" class="relative py-16 mt-12 our-skills">
-      <span class="flex justify-center text-center"
-        >Technical And Professional Skills</span
-      >
       <h2 class="text-5xl text-center">My Skills</h2>
 
       <div
@@ -274,7 +313,7 @@
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
               >
                 <span
-                  class="block h-full bg-[#2196F3] rounded-full"
+                  class="block h-full bg-[#2196F3] rounded-full bg-teal"
                   data-width="95%"
                 ></span>
               </div>
@@ -289,7 +328,7 @@
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
               >
                 <span
-                  class="block h-full bg-[#2196F3] rounded-full"
+                  class="block h-full bg-[#00D100] rounded-full"
                   data-width="90%"
                 ></span>
               </div>
@@ -304,7 +343,7 @@
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
               >
                 <span
-                  class="block h-full rounded-full bg-[#2196F3]"
+                  class="block h-full rounded-full bg-[#f7ba14]"
                   data-width="80%"
                 ></span>
               </div>
@@ -676,7 +715,7 @@
 
         <p class="mt-5 ml-8 -mb-5 text-xl font-bold">Send Me An Email:</p>
 
-        <form action="" class="max-w-4xl mx-auto">
+        <form action="" class="max-w-4xl mx-auto -mb-10">
           <div class="grid grid-cols-2 gap-6 mt-10 mb-8">
             <input
               type="text"
@@ -717,11 +756,9 @@
     <!-- ---------end contact section ------------>
 
     <!-- ---------start footer ------------>
-    <div class="mt-20">
-      <div
-        class="text-center sm:flex sm:items-center sm:justify-between border-t border-gray-300 mx-[10%] my-12 py-6"
-      >
-        <p class="flex items-center justify-center text-center">
+    <div class="">
+      <div class="border-[#eee] border-t-2">
+        <p class="mt-5 mb-10 text-center">
           Copyright &copy; Mohamed Abdelmaboud 2024, 2025
         </p>
       </div>

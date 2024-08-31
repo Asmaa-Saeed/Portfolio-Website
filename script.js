@@ -68,11 +68,11 @@ const navLinks = document.querySelector("nav ul");
 
 window.addEventListener("scroll", () => {
   if(scrollY > 50) {
-    navBar.classList.add('bg-white',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
-    navLinks.classList.remove('bg-white', 'bg-opacity-50', 'shadow-sm' );
+    navBar.classList.add('bg-white', 'dark:bg-[#11001f]/50', 'dark:shadow-white/50',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navLinks.classList.remove('bg-white', 'bg-opacity-50','dark:border', 'dark:border-white/50','dark:bg-transparent', 'dark:bg-darkTheme/50', 'shadow-sm' );
   }else {
-    navBar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
-    navLinks.classList.add('bg-white', 'bg-opacity-50', 'shadow-sm' );
+    navBar.classList.remove('bg-white', 'dark:bg-[#11001f]', 'dark:shadow-white/20',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navLinks.classList.add('bg-white', 'bg-opacity-50','dark:border', 'dark:border-white/50','dark:bg-transparent', 'dark:bg-darkTheme/50', 'shadow-sm');
   }
 });
 

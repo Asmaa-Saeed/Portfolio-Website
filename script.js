@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         charIndex = 0;
         textIndex = (textIndex + 1) % texts.length; // Move to the next text, loop back to start
         type(); // Restart typing
-      }, 2000); // Wait before starting the next text
+      }, 1000); // Wait before starting the next text
     }
   }
 
@@ -68,10 +68,29 @@ const navLinks = document.querySelector("nav ul");
 
 window.addEventListener("scroll", () => {
   if(scrollY > 50) {
-    navBar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navBar.classList.add('bg-white',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
     navLinks.classList.remove('bg-white', 'bg-opacity-50', 'shadow-sm' );
   }else {
     navBar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
     navLinks.classList.add('bg-white', 'bg-opacity-50', 'shadow-sm' );
   }
 });
+
+
+
+// ----------------------------light mode and dark mode -------------------------------
+
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
+
+function toggleTheme() {
+  document.documentElement.classList.toggle('dark')
+  if(document.documentElement.classList.contains('dark')) {
+    localStorage.theme = 'dark';
+  }else {
+    localStorage.theme = 'light';
+  }
+}

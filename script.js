@@ -11,7 +11,7 @@ function closeMenu() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const textElement = document.getElementById("typing-text");
-  const texts = [" ","Flutter Developer Based In Egypt"];
+  const texts = [" ","Flutter Developer", "Software Engineer"];
   let textIndex = 0;
   let charIndex = 0;
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (charIndex < texts[textIndex].length) {
       textElement.textContent += texts[textIndex].charAt(charIndex);
       charIndex++;
-      setTimeout(type, 100); // Adjust typing speed by changing the delay
+      setTimeout(type, 200); // Adjust typing speed by changing the delay
     } else {
       setTimeout(() => {
         textElement.textContent = ""; // Clear text after finishing
@@ -68,10 +68,10 @@ const navLinks = document.querySelector("nav ul");
 
 window.addEventListener("scroll", () => {
   if(scrollY > 50) {
-    navBar.classList.add('bg-white', 'dark:bg-[#11001f]/50', 'dark:shadow-white/50',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navBar.classList.add('bg-white', 'dark:bg-[#0d1117]/50', 'dark:shadow-white/50',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
     navLinks.classList.remove('bg-white', 'bg-opacity-50','dark:border', 'dark:border-white/50','dark:bg-transparent', 'dark:bg-darkTheme/50', 'shadow-sm' );
   }else {
-    navBar.classList.remove('bg-white', 'dark:bg-[#11001f]', 'dark:shadow-white/20',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    navBar.classList.remove('bg-white', 'dark:bg-[#0d1117]', 'dark:shadow-white/20',  'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
     navLinks.classList.add('bg-white', 'bg-opacity-50','dark:border', 'dark:border-white/50','dark:bg-transparent', 'dark:bg-darkTheme/50', 'shadow-sm');
   }
 });

@@ -8,6 +8,6 @@ li:hover i {
   color: white;
 }
  */
- /* .abdo img {
-  box-shadow: 2px 2px 2px teal;
-} */
+ .abdo .image{
+  filter: drop-shadow(0 0 0.75rem teal);
+}

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         charIndex = 0;
         textIndex = (textIndex + 1) % texts.length; // Move to the next text, loop back to start
         type(); // Restart typing
-      }, 1000); // Wait before starting the next text
+      }, 800); // Wait before starting the next text
     }
   }
 

@@ -23,7 +23,7 @@
     />
   </head>
   <body
-    class="text-[#302e4d] overflow-x-hidden font-Outfit leading-8 dark:bg-darkTheme dark:text-white"
+    class="text-[#302e4d] overflow-x-hidden font-Outfit  leading-8 dark:bg-darkTheme dark:text-white"
   >
     <div
       class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden"
@@ -91,7 +91,7 @@
       <!--------------------------- start mobile menu --------------------------------- -->
       <ul
         id="sideMenu"
-        class="fixed top-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 md:hidden -right-64 button-0 bg-rose-50 font-Ovo dark:bg-[#0d1117] dark:text-white"
+        class="fixed top-0 z-50 flex flex-col w-64 h-screen gap-4 px-10 py-20 transition duration-500 md:hidden -right-64 button-0 bg-[#eee] font-Ovo dark:bg-[#161b22] dark:text-white"
       >
         <div
           class="absolute p-1 border border-gray-800 dark:border-gray-300 border-1 right-6 top-6"
@@ -100,7 +100,7 @@
           <img
             src="images/close-black.png"
             alt=""
-            class="w-5 cursor-pointer dark:hidden"
+            class="w-5 cursor-pointer dark:hidden "
           />
           <img
             src="images/close-white.png"
@@ -109,23 +109,23 @@
           />
         </div>
 
-        <li>
+        <li class="duration-300 cursor-pointer hover:text-teal-600">
           <i class="mr-2 fa-solid fa-house"></i>
           <a href="#home" onclick="closeMenu()">Home</a>
         </li>
-        <li>
+        <li class="duration-300 cursor-pointer hover:text-teal-600">
           <i class="mr-2 fa-solid fa-user"></i>
           <a href="#about" onclick="closeMenu()">About</a>
         </li>
-        <li>
+        <li class="duration-300 cursor-pointer hover:text-teal-600">
           <i class="mr-2 fa-solid fa-briefcase"></i>
           <a href="#skills" onclick="closeMenu()">Skills</a>
         </li>
-        <li>
+        <li class="duration-300 cursor-pointer hover:text-teal-600">
           <i class="mr-2 fa-solid fa-briefcase"></i>
           <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
         </li>
-        <li>
+        <li class="duration-300 cursor-pointer hover:text-teal-600">
           <i class="mr-2 fa-solid fa-envelope"></i>
           <a href="#contact" onclick="closeMenu()">Contact</a>
         </li>
@@ -138,39 +138,46 @@
       id="home"
       class="flex flex-col items-center justify-center w-11/12 h-screen max-w-4xl mx-auto text-center"
     >
-      <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
+      <div
+        class="flex flex-col-reverse items-center w-full gap-20 my-20 lg:flex-row sm:"
+      >
         <div>
           <h3
-            class="flex items-center justify-center gap-2 mt-2 mb-5 text-xl md:text-xl font-Ovo"
+            class="flex items-center justify-center mt-24 gap-2 lg:mt-2 lg:mb-5 mb-2 text-[16px] lg:text-xl font-Ovo"
           >
             Hi! I am Mohamed Abdelmaboud
             <img src="images/hand-icon.png" alt="" class="w-6" />
           </h3>
           <h1
             id="typing-text"
-            class="text-4xl text-teal-600 font-Ovo profession"
+            class="text-2xl text-teal-600 lg:text-4xl font-Ovo profession"
           ></h1>
-          <p class="max-w-2xl mx-auto mt-5 text-xl font-Ovo">
+          <p class="max-w-2xl mx-auto lg:mt-5 mt-2 lg:text-xl text-[16px] font-Ovo">
             With a custom development and creative design, I create apps that
             inspire my clients, and increase their sales by reaching the target
             audience efficiently.
           </p>
 
           <div
-            class="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row"
+            class="flex flex-row items-center justify-center gap-4 mt-10 sm:flex-row"
           >
             <a
               href="#contact"
-              class="flex items-center gap-2 px-10 py-3 text-white border rounded-full text-[18px] bg-gradient-to-r from-[#176161]     to-[#45B08C]"
+              class="flex items-center gap-2 lg:px-10 py-3 text-white border rounded-full lg:text-[18px] text-[16px] px-8  bg-gradient-to-r from-[#176161] to-[#45B08C]"
             >
               Hire Me
-              <img src="images/right-arrow-white.png" alt="" class="w-4" />
+              <img
+                src="images/right-arrow-white.png"
+                alt=""
+                loading="lazy"
+                class="w-4"
+              />
             </a>
 
             <a
               href="./mohamed abdelmaboud.pdf"
               download
-              class="flex items-center gap-2 px-10 py-3 transition ease-in-out text-[18px] bg-white border border-gray-500 rounded-full dark:text-black"
+              class="flex items-center gap-2 lg:px-10 py-3 transition ease-in-out lg:text-[18px] text-[16px] bg-white border border-gray-500 px-8 rounded-full dark:text-black"
               target="_blank"
             >
               My CV
@@ -178,44 +185,19 @@
                 src="images/download-icon.png"
                 alt=""
                 class="w-4 text-white"
+                loading="lazy"
               />
-              
             </a>
           </div>
-          <!-- <div class="social">
-            <ul
-              class="flex items-center justify-center gap-4 mt-10 text-center"
-            >
-              <a
-                href="https://www.linkedin.com/in/mohamed-abdelmaboud-a95632296/"
-                target="_blank"
-                ><li
-                  class="flex items-center justify-center w-24 duration-500 border rounded-lg cursor-pointer sm:w-24 py-3 px-12 mx-4 border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:bg-teal-600 hover:text-white ease-in-out"
-                >
-                  <i
-                    class="text-2xl text-[#2196F3] duration-600 hover:text-[] fa-brands fa-linkedin"
-                  ></i>
-                  <span class="text-xl">LinkedIn</span></li
-              ></a>
-              <a href="https://github.com/MohamedAbdelmaboud" target="_blank">
-                <li
-                  class="flex items-center justify-center w-24 duration-500 border rounded-lg cursor-pointer sm:w-24 py-3 px-12 mx-4 border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:bg-teal-600 hover:text-white ease-in-out"
-                >
-                  <i
-                    class="text-2xl duration-500 text-[#2196F3] mr-1 fa-brands fa-github"
-                  ></i>
-                  <span class="text-xl">GitHub</span>
-                </li>
-              </a>
-            </ul>
-          </div> -->
         </div>
         <div class="relative mx-auto rounded-full abdo max-w-max">
           <img
-            src="./images/profile-img.jpg"
-            alt=""
-            class="mt-10 mb-10 rounded-full drop-shadow-lg shadow-lg-teal-600 w-80 h-80 sm:w-80 max-w-none image"
-          />
+          src="./images/profile-img.jpg"
+          alt="Profile Image"
+          class="w-40 h-40 max-w-full -mb-64 rounded-full lg:h-auto lg:w-80 lg:mb-10 drop-shadow-lg shadow-lg-teal-600 image"
+          loading="lazy"
+        />
+  
         </div>
       </div>
     </div>
@@ -224,17 +206,23 @@
     <!-- -------- ---- start about------------ -->
     <div
       id="about"
-      class="w-full p-10 px-[12%] py-10  bg-zinc-50 dark:bg-darkTheme "
+      class="w-full p-10 px-[12%] py-10 bg-zinc-50 dark:bg-darkTheme"
     >
       <!-- <h4 class="mt-20 text-lg text-center mb-22">Introduction</h4> -->
       <h2 class="text-5xl text-center font-Ovo">About Me</h2>
       <div class="flex flex-col items-center w-full gap-20 my-20 lg:flex-row">
-        <div class="relative mx-auto max-w-max">
-          <img
-            src="./images/about.gif"
-            alt=""
-            class="mb-10 w-72 h-96 sm:w-80 rounded-3xl max-w-none"
-          />
+        <div class="relative hidden mx-auto max-w-max md:block">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://lottie.host/fb1aa416-4b89-45f8-bb33-9590ee1a5fcc/dKaYnmJyVA.json"
+            background="##FFFFFF"
+            speed="1"
+            style="width: 300px; height: 500px"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
         </div>
         <div class="flex-1">
           <p class="max-w-2xl mb-10 font-Ovo">
@@ -245,32 +233,44 @@
           </p>
           <ul class="grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-3">
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#0d1117]/50"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#151b23f2]"
             >
               <i class="w-10 text-2xl text-teal-600 fa-solid fa-code"></i>
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Languages</h3>
-              <p class="text-sm text-gray-600 dark:text-white/80">Flutter, Dart, C++, Python</p>
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Languages
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-white/80">
+                Flutter, Dart, C++, Python
+              </p>
             </li>
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#0d1117]/50"
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#151b23f2]"
             >
               <i
                 class="w-10 text-2xl text-teal-600 fa-solid fa-graduation-cap"
               ></i>
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Education</h3>
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Education
+              </h3>
               <p class="text-sm text-gray-600 dark:text-white/80">
                 Faculty Of Computers And Information
               </p>
             </li>
             <li
-              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50m   hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#0d1117]/50 "
+              class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-teal-50m hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000] text-center flex items-center flex-col dark:border-white dark:hover:shadow-white dark:hover:bg-[#151b23f2]"
             >
               <i class="w-10 text-2xl text-teal-600 fa-solid fa-briefcase"></i>
-              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">Projects</h3>
-              <p class="text-sm text-gray-600 dark:text-white/80">20+ Projects</p>
+              <h3 class="my-4 font-semibold text-gray-700 dark:text-white">
+                Projects
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-white/80">
+                20+ Projects
+              </p>
             </li>
           </ul>
-          <h4 class="my-6 font-bold text-gray-700 font-Ovo dark:text-white/85">Tools I Use:</h4>
+          <h4 class="my-6 font-bold text-gray-700 font-Ovo dark:text-white/85">
+            Tools I Use:
+          </h4>
           <ul class="flex items-center gap-3 sm:gap-5">
             <li
               class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]"
@@ -278,7 +278,7 @@
               <img src="images/vscode.png" alt="" />
             </li>
             <li
-              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]  "
+              class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]"
             >
               <img src="images/firebase.png" alt="" />
             </li>
@@ -315,25 +315,28 @@
     <!-- ---------end about ------------>
 
     <!-- ---------start skills ------------>
-    <div id="skills" class="relative py-16 mt-12 our-skills">
+    <div id="skills" class="relative py-16 mt-0 lg:mt-10 our-skills">
       <h2 class="text-5xl text-center font-Ovo">My Skills</h2>
 
       <div
         class="container flex flex-col items-center mx-auto gap-28 md:flex-row md:space-x-5"
       >
-        <!-- Skills Section -->
-        <div class="w-full space-y-6 skills md:w-1/2">
+        <!-- Technical Skills Section -->
+        <div class="w-full px-5 space-y-6 skills md:w-1/2 ">
           <div>
             <div class="mb-8 skill">
               <h2
-                class="mb-5 text-2xl font-bold text-center text-dark font-Ovo"
+                class="mt-5 mb-5 text-2xl font-bold text-center lg:mt-0 text-dark font-Ovo"
               >
                 Technical Skills
               </h2>
               <h3
                 class="flex justify-between mb-2 text-xl font-semibold text-gray-700 font-Ovo dark:text-white/80"
               >
-                Dart <span class="text-gray-500 font-Outfit dark:text-white/80">95%</span>
+                Dart
+                <span class="text-gray-500 font-Outfit dark:text-white/80"
+                  >95%</span
+                >
               </h3>
               <div
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
@@ -348,7 +351,10 @@
               <h3
                 class="flex justify-between mb-2 text-xl font-semibold text-gray-700 font-Ovo dark:text-white/80"
               >
-                Flutter <span class="text-gray-500 font-Outfit dark:text-white/80">95%</span>
+                Flutter
+                <span class="text-gray-500 font-Outfit dark:text-white/80"
+                  >95%</span
+                >
               </h3>
               <div
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
@@ -364,13 +370,15 @@
                 class="flex justify-between mb-2 text-xl font-semibold text-gray-700 font-Ovo dark:text-white/80"
               >
                 Problem Solving
-                <span class="text-gray-500 font-Outfit dark:text-white/80">90%</span>
+                <span class="text-gray-500 font-Outfit dark:text-white/80"
+                  >90%</span
+                >
               </h3>
               <div
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
               >
                 <span
-                  class="block h-full bg-[#00D100] rounded-full"
+                  class="block h-full bg-[#00A300] rounded-full"
                   data-width="90%"
                 ></span>
               </div>
@@ -379,7 +387,10 @@
               <h3
                 class="flex justify-between mb-2 text-xl font-semibold text-gray-700 font-Ovo dark:text-white/80"
               >
-                Figma <span class="text-gray-500 font-Outfit dark:text-white/80">80%</span>
+                Figma
+                <span class="text-gray-500 font-Outfit dark:text-white/80"
+                  >80%</span
+                >
               </h3>
               <div
                 class="the-progress bg-gray-200 rounded-full h-2.5 overflow-hidden"
@@ -392,20 +403,11 @@
             </div>
           </div>
         </div>
-
-        <!-- Image (GIF) -->
-        <!-- <div class="flex justify-center max-w-2xl md:w-1/3">
-          <img
-            src="images/mo3.gif"
-            alt="my skills"
-            class="w-full max-w-xs rounded-lg md:max-w-sm md:h-auto"
-          />
-      <div class="py-10 text-gray-800">
-  <h2 class="mb-8 text-3xl font-extrabold text-center">Professional Skills</h2>
-  <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
-    <!-- Skill 1 -->
+        <!-- professional Skills Section -->
         <div class="py-10 text-gray-800">
-          <h2 class="mb-10 text-2xl font-bold text-center font-Ovo dark:text-white">
+          <h2
+            class="mb-10 text-2xl font-bold text-center font-Ovo dark:text-white "
+          >
             Professional Skills
           </h2>
           <div class="grid grid-cols-2 gap-x-24 gap-y-5">
@@ -444,7 +446,11 @@
                 </svg>
                 <span class="text-2xl font-bold dark:text-white/80">96%</span>
               </div>
-              <p class="-mt-4 font-semibold text-[18px] font-Ovo dark:text-white/80">Creativity</p>
+              <p
+                class="-mt-4 font-semibold text-[18px] font-Ovo dark:text-white/80"
+              >
+                Creativity
+              </p>
             </div>
 
             <!-- Skill 2 -->
@@ -482,7 +488,11 @@
                 </svg>
                 <span class="text-2xl font-bold dark:text-white/80">96%</span>
               </div>
-              <p class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80">Team Work</p>
+              <p
+                class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80"
+              >
+                Team Work
+              </p>
             </div>
 
             <!-- Skill 3 -->
@@ -520,7 +530,9 @@
                 </svg>
                 <span class="text-2xl font-bold dark:text-white/80">95%</span>
               </div>
-              <p class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80">
+              <p
+                class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80"
+              >
                 Communication
               </p>
             </div>
@@ -560,7 +572,9 @@
                 </svg>
                 <span class="text-2xl font-bold dark:text-white/80">95%</span>
               </div>
-              <p class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80">
+              <p
+                class="-mt-4 text-[18px] font-semibold font-Ovo dark:text-white/80"
+              >
                 Negotiation
               </p>
             </div>
@@ -730,7 +744,10 @@
             class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg dark:bg-[#161b22]"
           >
             <i class="mb-2 text-3xl text-green-600 fa-solid fa-phone"></i>
-            <span class="mb-1 text-xl font-semibold text-gray-800 dark:text-white">Phone</span>
+            <span
+              class="mb-1 text-xl font-semibold text-gray-800 dark:text-white"
+              >Phone</span
+            >
             <p class="text-gray-600 dark:text-white/80">+201029648334</p>
           </div>
           <a href="mailto:mohamedabdlmabod03@gmail.com">
@@ -738,55 +755,42 @@
               class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg dark:bg-[#161b22]"
             >
               <i class="mb-2 text-3xl text-blue-600 fa-solid fa-envelope"></i>
-              <span class="mb-1 text-xl font-semibold text-gray-800 dark:text-white"
+              <span
+                class="mb-1 text-xl font-semibold text-gray-800 dark:text-white"
                 >Email</span
               >
-              <p class="text-gray-600 dark:text-white/80">mohamedabdlmabod03@gmail.com</p>
+              <p class="text-gray-600 dark:text-white/80">
+                mohamedabdlmabod03@gmail.com
+              </p>
             </div>
           </a>
           <div
-            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg  dark:bg-[#161b22]"
+            class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg dark:bg-[#161b22]"
           >
             <i class="mb-2 text-3xl text-red-600 fa-solid fa-location-dot"></i>
-            <span class="mb-1 text-xl font-semibold text-gray-800 dark:text-white"
+            <span
+              class="mb-1 text-xl font-semibold text-gray-800 dark:text-white"
               >Address</span
             >
-            <p class="text-gray-600 dark:text-white/80">Egypt, Zagazig, Al Sharqia</p>
+            <p class="text-gray-600 dark:text-white/80">
+              Egypt, Zagazig, Al Sharqia
+            </p>
           </div>
-          <!-- <a href="https://github.com/MohamedAbdelmaboud">
-            <div
-              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg"
-            >
-              <i class="mb-2 text-3xl text-black fa-brands fa-github"></i>
-              <span class="mb-1 text-xl font-semibold text-gray-800"
-                >GitHub</span
-              >
-              <p class="text-gray-600">
-                Click <span class="text-blue-600">Here</span> to visit My
-                profile
-              </p>
-            </div>
-          </a> -->
-
-          <!-- <a href="https://www.linkedin.com/in/mohamed-abdelmaboud-a95632296/">
-            <div
-              class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg"
-            >
-              <i class="mb-2 text-3xl text-blue-600 fa-brands fa-linkedin"></i>
-              <span class="mb-1 text-xl font-semibold text-gray-800"
-                >LinkedIn</span
-              >
-              <p class="text-gray-600">
-                Click <span class="text-blue-600">Here</span> to visit My
-                profile
-              </p>
-            </div>
-          </a> -->
         </div>
-        <p class="mt-5 ml-8 -mb-5 text-xl font-bold dark:text-white/90">Send Me An Email:</p>
-        <form action="https://api.web3forms.com/submit" method="post" class="max-w-4xl mx-auto -mb-10">
+        <p class="mt-5 ml-8 -mb-5 text-xl font-bold dark:text-white/90">
+          Send Me An Email:
+        </p>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="post"
+          class="max-w-4xl mx-auto -mb-10"
+        >
           <div class="grid grid-cols-1 gap-6 mt-10 mb-8 sm:grid-cols-2">
-              <input type="hidden" name="access_key" value="f34a8582-8934-417f-b412-e8856fda995d">
+            <input
+              type="hidden"
+              name="access_key"
+              value="f34a8582-8934-417f-b412-e8856fda995d"
+            />
             <input
               type="text"
               placeholder="Your Name"
@@ -797,7 +801,7 @@
             <input
               type="text"
               placeholder="Your Email"
-              name = "email"
+              name="email"
               class="transition flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white dark:bg-[#161b22] dark:border-white/90"
               required
             />
@@ -806,21 +810,17 @@
             rows="6"
             placeholder="Your Message"
             name="message"
-            class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white mb-6 dark:bg-[#161b22]  dark:border-white/90"
+            class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white mb-6 dark:bg-[#161b22] dark:border-white/90"
             required
           ></textarea>
           <button
-            class="flex items-center justify-between gap-2 px-5 py-3 mx-auto text-[18px] text-white duration-500 bg-black/80 rounded-lg w-max hover:bg-black dark:border-[0.5px] dark:bg-[#0d1117] dark:hover:bg-[#161b22] "
+            class="flex items-center justify-between gap-2 px-5 py-3 mx-auto text-[18px] text-white duration-500 bg-black/80 rounded-lg w-max hover:bg-black dark:border-[0.5px] dark:bg-[#0d1117] dark:hover:bg-[#151b23f2]"
           >
             Submit Email
-          <img src="images/right-arrow-white.png" class="w-4" alt="" />
+            <img src="images/right-arrow-white.png" class="w-4" alt="" />
           </button>
-        </form> 
+        </form>
         <div>
-          <!-- <span class="mt-5 ml-8 -mb-5 text-xl font-bold ">My Social Media Links:</span>
-      <span><a href="https://www.linkedin.com/in/mohamed-abdelmaboud-a95632296/" class="ml-8 text-2xl text-blue-500"><i class="fa-brands fa-linkedin"></i></a></span>
-      <span><a href="https://github.com/MohamedAbdelmaboud" class="ml-8 text-2xl text-blue-500"><i class="fa-brands fa-github"></i></a></span>
-      <span><a href="mohamedabdlmabod03@gmail.com" class="ml-8 text-2xl text-blue-500"><i class="fa-solid fa-envelope"></i></a></span> -->
         </div>
       </div>
     </div>
@@ -828,16 +828,31 @@
     <!-- ---------end contact section ------------>
 
     <!-- ---------start footer ------------>
-    <div class="">
-      <div class="border-[#eee] border-t-2">
-        <p class="mt-5 mb-10 text-center">
-          Copyright &copy; Mohamed Abdelmaboud 2024, 2025
+    <div class="w-full px-4 py-4 bg-gray-100  border-t-2 border-[#eee] dark:bg-darkTheme">
+      <div class="flex flex-col items-center justify-around md:flex-row">
+        <p class="mt-4 mb-4 text-center md:text-left">
+            Copyright &copy; Mohamed Abdelmaboud 2024, 2025
         </p>
+        <div class="flex mt-4 space-x-6 social-links">
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/mohamed-abdelmaboud-a95632296/"
+            class="duration-300 hover:scale-125"
+            ><i class="text-4xl fa-brands fa-linkedin"></i
+          ></a>
+          <!-- GitHub -->
+          <a href="https://github.com/MohamedAbdelmaboud" class="duration-300 hover:scale-125"
+            ><i class="text-4xl fa-brands fa-github"></i
+          ></a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/+201029648334" class="duration-300 hover:scale-125"
+            ><i class="text-4xl fa-brands fa-whatsapp"></i
+          ></a>
+        </div>
       </div>
     </div>
-
-    <!-- ---------end footer ------------>
-
+    <!-- ---------start footer ------------>
+        
     <script src="script.js"></script>
   </body>
 </html>

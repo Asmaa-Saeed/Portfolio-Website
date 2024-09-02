@@ -37,32 +37,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // add the skills smooth fill
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   const progressBars = document.querySelectorAll(".the-progress span");
+document.addEventListener("DOMContentLoaded", function () {
+  const progressBars = document.querySelectorAll(".the-progress span");
 
-//   const observer = new IntersectionObserver(
-//     function (entries, observer) {
-//       entries.forEach(function (entry) {
-//         if (entry.isIntersecting) {
-//           const bar = entry.target;
-//           const width = bar.getAttribute("data-width");
-//           bar.style.width = width;
-//           observer.unobserve(bar); // Stop observing after the animation
-//         }
-//       });
-//     },
-//     { threshold: 0.5 }
-//   );
+  const observer = new IntersectionObserver(
+    function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          const bar = entry.target;
+          const width = bar.getAttribute("data-width");
+          bar.style.width = width;
+          observer.unobserve(bar); // Stop observing after the animation
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
 
-//   progressBars.forEach(function (bar) {
-//     observer.observe(bar);
-//   });
-// });
+  progressBars.forEach(function (bar) {
+    observer.observe(bar);
+  });
+});
 
 
-// // scroll navbar
-// const navBar = document.querySelector("nav");
-// const navLinks = document.querySelector("nav ul");
+// scroll navbar
+const navBar = document.querySelector("nav");
+const navLinks = document.querySelector("nav ul");
 
 
 

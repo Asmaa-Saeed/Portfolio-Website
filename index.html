@@ -34,7 +34,7 @@
       class="w-full fixed px-5 lg:px-8 xl:px-[5%] flex items-center justify-between z-50 text-xl"
     >
       <h3
-        class="mt-[-5px] cursor-pointer font-extrabold text-5xl sm:ml-10 ml-2"
+        class="mt-[-5px] cursor-pointer font-extrabold text-5xl  ml-2"
         style="font-family: 'Clicker Script', cursive"
       >
         Mohamed<span class="text-teal-600 text-7xl">.</span>
@@ -207,12 +207,7 @@
     <!-- -------- ---- start about------------ -->
     <div
       id="about"
-      class="w-full p-10 px-[12%] py-10 bg-zinc-100 dark:bg-darkTheme"
-      style="
-        @media (min-width: 1024px) {
-          clip-path: polygon(0 0, 100% 10%, 100% 98%, 0% 100%);
-        }
-      "
+      class="w-full p-10 px-[12%] bg-zinc-50 py-10 dark:bg-darkTheme"
     >
       <!-- <h4 class="mt-20 text-lg text-center mb-22">Introduction</h4> -->
       <h2 class="-mb-5 text-5xl text-center lg:mt-10 font-Ovo">About Me</h2>
@@ -277,7 +272,7 @@
           <h4 class="my-6 font-bold text-gray-700 font-Ovo dark:text-white/85">
             Tools I Use:
           </h4>
-          <ul class="flex mx- gapp-3 wrap item-s-center sm:gap-5 lg:mx-0">
+          <ul class="flex gap-1 mx- wrap item-s-center sm:gap-5 lg:mx-0">
             <li
               class="flex items-center justify-center w-12 duration-500 border rounded cursor-pointer sm:w-14 aspect-square border-grey-400-lg hover:-translate-y-1.5 hover:shadow-[2px_2px_2px_#eee] hover:opacity-90 hover:rotate-[360deg]"
             >
@@ -325,14 +320,14 @@
       <h2 class="text-5xl text-center font-Ovo">My Skills</h2>
 
       <div
-        class="container flex flex-col items-center mx-auto gap-28 md:flex-row md:space-x-5"
+        class="container flex flex-col items-center gap-8 mx-auto lg:gap-28 md:flex-row md:space-x-5"
       >
         <!-- Technical Skills Section -->
         <div class="w-full p-3 space-y-6 skills md:w-1/2">
           <div>
             <div class="mb-8 skill">
               <h2
-                class="mt-5 mb-5 text-2xl font-bold text-center lg:mt-0 text-dark font-Ovo"
+                class="mt-5 text-2xl font-bold text-center lg:mb-5 lg:mt-0 text-dark font-Ovo"
               >
                 Technical Skills
               </h2>
@@ -418,7 +413,7 @@
           </h2>
           <div class="grid grid-cols-2 gap-x-24 gap-y-5">
             <!-- Skill 1 -->
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center text-center skill-circle">
               <div
                 class="relative flex items-center justify-center mb-4 h-28 w-28"
               >
@@ -443,6 +438,7 @@
                     fill="none"
                     stroke-dasharray="251.2"
                     stroke-dashoffset="10"
+                    data-percentage="0.96"
                     style="
                       stroke-dashoffset: calc(251.2 * (1 - 0.96));
                       transition: stroke-dashoffset 2s;
@@ -460,7 +456,7 @@
             </div>
 
             <!-- Skill 2 -->
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center text-center skill-circle">
               <div
                 class="relative flex items-center justify-center mb-4 h-28 w-28"
               >
@@ -485,6 +481,7 @@
                     fill="none"
                     stroke-dasharray="251.2"
                     stroke-dashoffset="10"
+                    data-percentage="0.96"
                     style="
                       stroke-dashoffset: calc(251.2 * (1 - 0.96));
                       transition: stroke-dashoffset 2s;
@@ -502,7 +499,7 @@
             </div>
 
             <!-- Skill 3 -->
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center text-center skill-circle">
               <div
                 class="relative flex items-center justify-center mb-4 h-28 w-28"
               >
@@ -527,6 +524,7 @@
                     fill="none"
                     stroke-dasharray="251.2"
                     stroke-dashoffset="10"
+                    data-percentage="0.95"
                     style="
                       stroke-dashoffset: calc(251.2 * (1 - 0.95));
                       transition: stroke-dashoffset 2s;
@@ -544,7 +542,7 @@
             </div>
 
             <!-- Skill 4 -->
-            <div class="flex flex-col items-center text-center">
+            <div class="flex flex-col items-center text-center skill-circle">
               <div
                 class="relative flex items-center justify-center mb-4 h-28 w-28"
               >
@@ -569,6 +567,7 @@
                     fill="none"
                     stroke-dasharray="251.2"
                     stroke-dashoffset="10"
+                    data-percentage="0.95"
                     style="
                       stroke-dashoffset: calc(251.2 * (1 - 0.95));
                       transition: stroke-dashoffset 2s;
@@ -593,19 +592,14 @@
 
       <div
         id="portfolio"
-        class="w-full p-10 px-[12%] py-10 bg-zinc-100 dark:bg-darkTheme"
-        style="
-          @media (min-width: 1024px) {
-            clip-path: polygon(0 0, 100% 10%, 100% 98%, 0% 100%);
-          }
-        "
+        class="w-full lg:p-10 bg-zinc-50 p-2 lg:px-[12%] px-[3%] py-10 dark:bg-darkTheme"
       >
         <h2 class="text-5xl text-center font-Ovo lg:mt-8">My Portfolio</h2>
-        <p class="max-w-2xl mx-auto mt-5 mb-12 text-center font-Ovo">
+        <p class="mx-auto mt-5 mb-12 text-center font-Ovo">
           Welcome To My Mobile App Development Portfolio! Explore A Collection
           Of Projects Showcasing My Expertise In Mobile App Development.
         </p>
-        <span class="block mt-5 ml-8 -mb-5 text-xl font-bold font-Ovo"
+        <span class="block mt-5 -mb-5 text-xl font-bold lg:ml-2 font-Ovo"
           >My Latest Work:</span
         >
 
@@ -743,7 +737,7 @@
       <!-- ---------start contact section ------------>
       <div
         id="contact"
-        class="w-full px-[12%] py-10 scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
+        class="w-full lg:px-[12%] py-10 px-[3%] scroll-mt-20 bg-[url('./images/footer-bg-color.png')] bg-no-repeat bg-[length:90%_auto] bg-center dark:bg-none"
       >
         <h2 class="text-5xl text-center font-Ovo">Get In Touch</h2>
         <p class="mt-5 text-center font-Ovo">

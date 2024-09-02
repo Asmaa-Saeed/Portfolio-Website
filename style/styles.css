@@ -11,3 +11,15 @@ li:hover i {
  .abdo .image{
   filter: drop-shadow(0 0 0.75rem teal);
 }
+
+@media (max-width: 767px) {
+#about  .content p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#about  .content ul li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}

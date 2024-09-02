@@ -80,10 +80,10 @@ window.addEventListener("scroll", () => {
 
 // ----------------------------light mode and dark mode -------------------------------
 
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-  document.documentElement.classList.add('dark')
+if (localStorage.theme === 'white' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: white)').matches)) {
+  document.documentElement.classList.add('white')
 } else {
-  document.documentElement.classList.remove('dark')
+  document.documentElement.classList.remove('white')
 }
 
 function toggleTheme() {
